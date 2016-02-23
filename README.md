@@ -4,6 +4,13 @@
 
 **こんな感じに作れば、大丈夫。**
 
+**ライブラリインストール方法**
+
+```
+pod 'MyPodsSample', :git => 'https://github.com/gupuru/MyPodsSample.git'
+```
+
+
 # 参考サイト
  [基本](http://dev.classmethod.jp/smartphone/iphone/cocoapods/
  "基本")
