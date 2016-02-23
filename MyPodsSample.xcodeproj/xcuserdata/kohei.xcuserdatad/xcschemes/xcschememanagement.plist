@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Example.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>MyPodsSample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>553183E61C7BED9C0011D26D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>553183F91C7BED9C0011D26D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>55D8C7AB1C7AF9C10067FB14</key>
 		<dict>
 			<key>primary</key>
