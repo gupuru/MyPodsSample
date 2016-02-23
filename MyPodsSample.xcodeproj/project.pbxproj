@@ -13,6 +13,8 @@
 		553183F11C7BED9C0011D26D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553183F01C7BED9C0011D26D /* Assets.xcassets */; };
 		553183F41C7BED9C0011D26D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553183F21C7BED9C0011D26D /* LaunchScreen.storyboard */; };
 		553183FF1C7BED9C0011D26D /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553183FE1C7BED9C0011D26D /* ExampleUITests.swift */; };
+		553184071C7BF07D0011D26D /* MyPodsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D8C7AC1C7AF9C10067FB14 /* MyPodsSample.framework */; };
+		553184081C7BF07D0011D26D /* MyPodsSample.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55D8C7AC1C7AF9C10067FB14 /* MyPodsSample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55D8C7B01C7AF9C10067FB14 /* MyPodsSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D8C7AF1C7AF9C10067FB14 /* MyPodsSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55D8C7B81C7AF9D70067FB14 /* MyPodsSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8C7B71C7AF9D70067FB14 /* MyPodsSample.swift */; };
 /* End PBXBuildFile section */
@@ -25,7 +27,28 @@
 			remoteGlobalIDString = 553183E61C7BED9C0011D26D;
 			remoteInfo = Example;
 		};
+		553184091C7BF07D0011D26D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55D8C7A31C7AF9C10067FB14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55D8C7AB1C7AF9C10067FB14;
+			remoteInfo = MyPodsSample;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5531840B1C7BF07D0011D26D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				553184081C7BF07D0011D26D /* MyPodsSample.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		553183E71C7BED9C0011D26D /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				553184071C7BF07D0011D26D /* MyPodsSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,10 +166,12 @@
 				553183E31C7BED9C0011D26D /* Sources */,
 				553183E41C7BED9C0011D26D /* Frameworks */,
 				553183E51C7BED9C0011D26D /* Resources */,
+				5531840B1C7BF07D0011D26D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5531840A1C7BF07D0011D26D /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -291,6 +317,11 @@
 			target = 553183E61C7BED9C0011D26D /* Example */;
 			targetProxy = 553183FB1C7BED9C0011D26D /* PBXContainerItemProxy */;
 		};
+		5531840A1C7BF07D0011D26D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55D8C7AB1C7AF9C10067FB14 /* MyPodsSample */;
+			targetProxy = 553184091C7BF07D0011D26D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -317,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.Example;
@@ -328,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.Example;

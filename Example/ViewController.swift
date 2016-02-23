@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import MyPodsSample
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        MyPodsSample.start()
     }
 
     override func didReceiveMemoryWarning() {
